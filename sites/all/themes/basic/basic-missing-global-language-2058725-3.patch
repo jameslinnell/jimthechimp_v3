@@ -1,0 +1,13 @@
+diff --git a/template.php b/template.php
+index 1804c1a..515fb3b 100755
+--- a/template.php
++++ b/template.php
+@@ -19,7 +19,7 @@ if (theme_get_setting('basic_tabs')) {
+ }
+ 
+ function basic_preprocess_html(&$vars) {
+-  global $user;
++  global $user, $language;
+ 
+   // Add role name classes (to allow css based show for admin/hidden from user)
+   foreach ($user->roles as $role){
