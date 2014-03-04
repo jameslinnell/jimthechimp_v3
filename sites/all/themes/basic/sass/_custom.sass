@@ -6,3 +6,112 @@
 
 // Import variables and mixins to be used.
 @import _config.sass
+
+// Custom link styling
+#navigation
+	text-align: right
+
+#primary
+	font-size: 1.4em
+	a
+		color: $site-color
+	a:hover
+		color: #000000
+		text-decoration: none
+
+// Custom navigation positioning
+#primary
+	margin-top: 60px
+
+.item-list
+	ul
+		li
+			margin: 0
+
+.block
+	h2
+		margin: 0.2em 0
+
+	.view
+		overflow-y: scroll
+		height: 400px
+
+#block-views-blog-block
+	.views-field
+		margin-bottom: 4px
+
+	.views-field-created-1
+		span
+			background-color: #333
+			color: #FFF
+			padding: 1px 5px
+			border: 1px solid #888
+
+	.views-field-title
+		font-size: 1.1em
+		a
+			color: #000
+		a:hover
+			color: $site-color
+
+	.views-field-body
+		color: #777
+
+	.views-field-view-node
+		margin-bottom: 10px
+
+		span
+			margin-left: 65%
+
+#block-views-tweets-block_1
+	
+	.view-tweets
+		overflow-y: scroll
+		height: 400px
+
+		table
+			width: 100%
+			border: none
+
+			tbody
+				border: none
+
+				tr
+					padding: 0
+					background-color: transparent
+
+					td
+						padding: 0
+
+						.twitter-status
+							padding: 0
+							margin-top: 10px
+
+							.text
+								color: #777
+								font-size: 0.9em
+								margin-top: 4px
+								margin-left: 0px
+
+							.timestamp
+								float: left
+								margin-left: 5px
+								margin-right: 45px
+								background-color: #333333
+								color: white
+								padding: 0px 5px
+								border: 1px solid #888888
+
+							.name-handle
+								margin-left: 52px
+								line-height: 1em
+
+				tr.views-row-first
+					.twitter-status
+						margin-top: 0
+
+.item-list
+	ul
+		li
+			margin-bottom: 10px
+			border-bottom: 1px solid #AAAAAA

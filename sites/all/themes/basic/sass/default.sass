@@ -73,8 +73,19 @@ div.view div.views-admin-links
   width: auto
 
 /* Rollover edit links for blocks.
+.front
+  div.block
+    width: 25%
+    float: left
+
 div.block
+  padding: 0 4px
   position: relative
+  
+
+  div.block-inner
+    border-top: 10px solid #222222
+
   .edit
     display: none
     position: absolute
@@ -98,3 +109,10 @@ div.block
       margin: 0
   &:hover .edit
     display: block
+
+div#block-system-main
+  border: none
+  width: 100%
+
+  div.block-inner
+    border: none

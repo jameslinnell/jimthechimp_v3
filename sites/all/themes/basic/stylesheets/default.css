@@ -1,0 +1,150 @@
+/* About Default Styles
+ * ---------------------
+ * default.css is used to establish general rules, browser reset, or admin user interface styles.
+ * Browser Reset
+ * -------------
+ * For a more complete reset, go to http://developer.yahoo.com/yui/reset/ */
+/* line 8, ../sass/default.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear Floats Without Structural Markup
+ * ---------------------------------------
+ * http://www.positioniseverything.net/easyclearing.html */
+/* line 16, ../sass/default.sass */
+.clearfix {
+  display: inline-block;
+}
+/* line 18, ../sass/default.sass */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Hides from IE-mac \ */
+/* line 26, ../sass/default.sass */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 29, ../sass/default.sass */
+.clearfix {
+  display: block;
+}
+
+/* End hide from IE-mac */
+/* clear classes */
+/* line 35, ../sass/default.sass */
+.clearleft, .clearl, .cleft {
+  clear: left;
+}
+
+/* line 38, ../sass/default.sass */
+.clearright, .clearr, .cright {
+  clear: right;
+}
+
+/* line 41, ../sass/default.sass */
+.clear, .clearboth, .clearall {
+  clear: both;
+}
+
+/* Float classes */
+/* line 45, ../sass/default.sass */
+.floatleft, .fleft, .floatl {
+  float: left;
+  margin: 0 10px 5px 0;
+}
+
+/* line 49, ../sass/default.sass */
+.floatright, .fright, .floatr {
+  float: right;
+  margin: 0 0 5px 10px;
+}
+
+/* "Skip to Main Content" link
+ * ---------------------------
+ * This link useful for both visually impaired people and those with mobility impairments
+ * who cannot use a mouse. http://www.webaim.org/techniques/css/invisiblecontent/ */
+/* line 59, ../sass/default.sass */
+#skip a:link, #skip a:hover, #skip a:visited {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* line 66, ../sass/default.sass */
+#skip a:active, #skip a:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* bug fix with views 2 edit links. */
+/* line 72, ../sass/default.sass */
+div.view div.views-admin-links {
+  width: auto;
+}
+
+/* Rollover edit links for blocks. */
+/* line 77, ../sass/default.sass */
+.front div.block {
+  width: 25%;
+  float: left;
+}
+
+/* line 81, ../sass/default.sass */
+div.block {
+  padding: 0 4px;
+  position: relative;
+}
+/* line 86, ../sass/default.sass */
+div.block div.block-inner {
+  border-top: 10px solid #222222;
+}
+/* line 89, ../sass/default.sass */
+div.block .edit {
+  display: none;
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  z-index: 40;
+  padding: 3px 8px 0;
+  font-size: 10px;
+  line-height: 16px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  /*let's get fancy! */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-box-shadow: 0 1px 3px #888888;
+  -webkit-box-shadow: -1px 1px 2px #666666;
+}
+/* line 105, ../sass/default.sass */
+div.block .edit a {
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/* line 110, ../sass/default.sass */
+div.block:hover .edit {
+  display: block;
+}
+
+/* line 113, ../sass/default.sass */
+div#block-system-main {
+  border: none;
+  width: 100%;
+}
+/* line 117, ../sass/default.sass */
+div#block-system-main div.block-inner {
+  border: none;
+}

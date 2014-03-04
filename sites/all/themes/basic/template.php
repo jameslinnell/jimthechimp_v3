@@ -303,3 +303,30 @@ function basic_menu_local_tasks(&$variables) {
   }
   return $output;
 }
+
+/**
+ * theme_preprocess()
+ */
+function basic_preprocess() {
+  $element = array(
+    'Michroma' => array (
+      '#tag' => 'link', // The #tag is the html tag - <link />
+      '#attributes' => array( // Set up an array of attributes inside the tag
+        'href' => 'http://fonts.googleapis.com/css?family=Michroma',
+        'rel' => 'stylesheet',
+        'type' => 'text/css',
+      ),
+    ),
+    'Orbitron' => array (
+      '#tag' => 'link', // The #tag is the html tag - <link />
+      '#attributes' => array( // Set up an array of attributes inside the tag
+        'href' => 'http://fonts.googleapis.com/css?family=Orbitron:400,900',
+        'rel' => 'stylesheet',
+        'type' => 'text/css',
+      ),
+    ),
+  );
+  foreach($element as $key => $val) {
+    drupal_add_html_head($val, $key);
+  }
+}
