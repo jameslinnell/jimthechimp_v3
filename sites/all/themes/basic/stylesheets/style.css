@@ -446,7 +446,30 @@ body:before {
   margin-top: 0;
 }
 
-/* line 115, ../sass/_custom.sass */
+/* line 114, ../sass/_custom.sass */
+#block-views-clients-block .views-row {
+  margin-bottom: 24px;
+  border: none;
+  min-height: 60px;
+}
+/* line 119, ../sass/_custom.sass */
+#block-views-clients-block .views-field-field-company-logo {
+  float: left;
+  min-height: 60px;
+}
+/* line 123, ../sass/_custom.sass */
+#block-views-clients-block .views-field-name, #block-views-clients-block .views-field-field-location {
+  margin-left: 100px;
+}
+/* line 126, ../sass/_custom.sass */
+#block-views-clients-block .views-field-name a, #block-views-clients-block .views-field-field-location a {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #333333;
+  font-size: 1.1em;
+}
+
+/* line 134, ../sass/_custom.sass */
 .item-list ul li {
   margin-bottom: 10px;
   border-bottom: 1px solid #aaaaaa;
